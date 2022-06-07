@@ -4,7 +4,7 @@ const app = new PIXI.Application({
     height: window.innerHeight
 });
 
-const sprite = app.stage.addChild(new PIXI.Sprite(PIXI.Texture.from('cta.mp4')));  
+const sprite = app.stage.addChild(new PIXI.Sprite(PIXI.Texture.from('earth.mp4')));  
 sprite.x = 300;
 sprite.y = 300;
 sprite.anchor.x = 0.5;

@@ -9,11 +9,7 @@ const sprite1 = appendSprite('icon.png', 100, 300);
 
 // video
 const sprite2 = app.stage.addChild(new PIXI.Sprite(PIXI.Texture.from('cta.mp4')));  
-sprite2.x = 300;
-sprite2.y = 300;
-sprite2.anchor.x = 0.5;
-sprite2.anchor.y = 0.5;
-sprite2.scale.set(0.1, 0.1);
+sprite2.scale.set(1, 1);
 const video = sprite2.texture.baseTexture.source;
 
 sprite2.interactive = true;

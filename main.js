@@ -1,7 +1,3 @@
-// 1.
-// Screen.Pixi.js:415
-
-// 2.
 const video = document.createElement("video");
 video.autoplay = true;
 video.muted = true; // video.setAttribute('muted', 'true');
@@ -16,16 +12,16 @@ video.style.pointerEvents = 'none';
 video.style.position = 'absolute';
 video.style.left = '0px';
 video.style.top = '0px';
-document.body.appendChild(video);
 
-// const url = 'cta.mp4';
-// const xhr = new XMLHttpRequest();
-// xhr.open('GET', url, true);
-// xhr.onload = function() {
-//     video.src = url;
-//     video.load();
-// };
-// xhr.send();
+video.addEventListener('timeupdate', function video_time_update(event) {    
+    if (video.currentTime > 0.1) {
+        video.removeEventListener('timeupdate', video_time_update);
+        video.pause();
+        video.currentTime = 0;        
+    }
+});
+
+document.body.appendChild(video);
 
 window.addEventListener('mousedown', () => video.play());
 window.addEventListener('touchstart', () => video.play());

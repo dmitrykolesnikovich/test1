@@ -1,18 +1,7 @@
-// const app = new PIXI.Application({
-//     view: document.getElementById('mycanvas'),
-//     width: window.innerWidth, 
-//     height: window.innerHeight
-// });
+// 1.
+// Screen.Pixi.js:415
 
-// const sprite = app.stage.addChild(new PIXI.Sprite(PIXI.Texture.from('https://samplelib.com/lib/preview/mp4/sample-5s.mp4')));  
-// sprite.x = 300;
-// sprite.y = 300;
-// sprite.anchor.x = 0.5;
-// sprite.anchor.y = 0.5;
-
-// sprite.interactive = true;
-// sprite.buttonMode = true;
-
+// 2.
 const video = document.createElement("video");
 video.setAttribute('muted', 'muted');
 video.setAttribute('playsinline', 'playsinline');

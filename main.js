@@ -4,7 +4,7 @@
 // 2.
 const video = document.createElement("video");
 video.autoplay = true;
-video.setAttribute('muted', 'true');
+video.muted = true; // video.setAttribute('muted', 'true');
 video.src = 'cta.mp4';
 video.setAttribute('playsinline', 'playsinline');
 video.setAttribute('webkit-playsinline', 'webkit-playsinline');

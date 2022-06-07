@@ -4,10 +4,9 @@ const app = new PIXI.Application({
     height: window.innerHeight
 });
 
-// video
-const sprite2 = app.stage.addChild(new PIXI.Sprite(PIXI.Texture.from('cta.mp4')));  
-sprite2.x = 300;
-sprite2.y = 300;
-sprite2.anchor.x = 0.5;
-sprite2.anchor.y = 0.5;
-sprite2.scale.set(0.1, 0.1);
+const sprite = app.stage.addChild(new PIXI.Sprite(PIXI.Texture.from('cta.mp4')));  
+sprite.x = 300;
+sprite.y = 300;
+sprite.anchor.x = 0.5;
+sprite.anchor.y = 0.5;
+sprite.scale.set(0.1, 0.1);

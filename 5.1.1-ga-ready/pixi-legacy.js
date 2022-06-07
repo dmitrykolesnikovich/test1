@@ -12751,7 +12751,7 @@ var PIXI = (function (exports) {
 	        }
 	        else if (this.autoPlay)
 	        {
-	            source.play();
+	            // source.play();
 	        }
 	    };
 

@@ -3,13 +3,12 @@
 
 // 2.
 const video = document.createElement("video");
-/* video.setAttribute('muted', 'muted');
-video.setAttribute('playsinline', 'playsinline');
-video.setAttribute('webkit-playsinline', 'webkit-playsinline');
-video.setAttribute('preload', 'auto'); */
+/* video.setAttribute('preload', 'auto');*/
 video.autoplay = true;
 video.muted = true;
 video.src = 'cta.mp4';
+video.setAttribute('playsinline', 'playsinline');
+video.setAttribute('webkit-playsinline', 'webkit-playsinline');
 // video.crossOrigin = "anonymous";
 video.style.width = '400px';
 video.style.height = '400px';

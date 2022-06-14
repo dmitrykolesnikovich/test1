@@ -1,5 +1,4 @@
 const video = document.createElement("video");
-video.autoplay = true;
 video.src = 'video.mp4';
 video.setAttribute('playsinline', 'playsinline');
 video.setAttribute('webkit-playsinline', 'webkit-playsinline');

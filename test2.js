@@ -8,7 +8,7 @@ video.style.height = '400px';
 video.style.zIndex = '100';
 video.style.pointerEvents = 'none';
 video.style.position = 'absolute';
-video.style.left = '0px';
+video.style.left = '200px';
 video.style.top = '0px';
 
 document.body.appendChild(video);
